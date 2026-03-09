@@ -149,21 +149,41 @@ This project helped demonstrate hands-on experience with:
 siem-security-monitoring-lab/
 ├── README.md
 ├── docs/
-│   ├── capstone-report.pdf
-│   ├── capstone-proposal.pdf
-│   └── topic-approval.pdf
 ├── screenshots/
-│   ├── wazuh-dashboard-overview.png
-│   ├── connected-agents.png
-│   ├── brute-force-simulation.png
-│   ├── firewall-change-alert.png
-│   ├── user-creation-alert.png
-│   └── linux-attack-events.png
 ├── diagrams/
-│   └── siem-lab-network-diagram.png
 ├── writeups/
-│   ├── lab-setup.md
-│   ├── simulated-attacks.md
-│   └── incident-analysis.md
 └── resume-reference/
-    └── project-summary.md
+```
+
+
+## Why This Project Matters
+
+Small organizations often lack the budget and staff for enterprise security tooling, but they still face serious cybersecurity risks. This project demonstrates how an open-source SIEM solution like Wazuh can provide meaningful security monitoring and detection capabilities in a cost-effective way.
+
+This capstone also is a showcase of my knowledge and reflects my interest in:
+
+- Security Operations Center (SOC) work
+
+- Incident detection and response
+
+- Defensive security
+
+- Security monitoring and alert analysis
+
+
+
+## Author
+
+**Rylan Stalnaker**
+Cybersecurity and Information Assurance Graduate
+Western Governors University
+
+GitHub: Rylandale515
+
+LinkedIn: Rylan Stalnaker ([click here](https://www.linkedin.com/in/rylan-stalnaker-6ba923180/))
+
+
+### Disclaimer
+
+This project was developed in a controlled virtual lab environment for educational purposes only.
+No production systems or unauthorized targets were used.
