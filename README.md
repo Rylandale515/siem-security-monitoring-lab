@@ -18,6 +18,27 @@ After deployment, baseline activity was generated and documented. Controlled sus
 
 ---
 
+## Key Artifacts at a Glance
+
+- Centralized Wazuh SIEM deployment
+- Windows and Linux endpoint monitoring
+- Simulated brute-force and privilege escalation behavior
+- MITRE ATT&CK-aligned analysis
+- Incident reporting and response documentation
+
+---
+
+## Technical Artifacts
+
+This repository includes supporting technical artifacts for the project:
+
+- [Architecture Diagram](diagrams/siem-lab-architecture.png)
+- [Incident Analysis Report](writeups/incident-analysis-report.md)
+- [Attack Simulation Notes](writeups/attack-simulations.md)
+- [Lab Setup Documentation](writeups/lab-setup.md)
+
+---
+
 ## Project Goals
 
 The primary goal of this capstone project was to design and evaluate a SIEM-based security monitoring system in a simulated small business environment.
