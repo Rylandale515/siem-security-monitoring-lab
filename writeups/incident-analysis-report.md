@@ -101,12 +101,12 @@ Selected observed behaviors were mapped to the MITRE ATT&CK framework to support
 
 | Technique ID | Sub-Technique | Technique Name | Observed Behavior | Log Evidence |
 |--------------|---------------|----------------|-------------------|--------------|
-| T1110.001 | Password Guessing | Brute Force | Repeated failed login attempts against a single Windows account in a short timeframe, followed by a successful authentication | Windows Security Event ID 4625 (failed logon) repeated in sequence; followed by Event ID 4624 (successful logon) — surfaced as Wazuh authentication anomaly alert |
-| T1136.001 | Local Account | Create Account | A new user account was created on the Windows endpoint immediately following initial access | Windows Security Event ID 4720 (user account created) — flagged by Wazuh account management rule |
-| T1098 | — | Account Manipulation | Newly created account was added to the local Administrators group, granting elevated privileges | Windows Security Event ID 4732 (member added to security-enabled local group) — Wazuh privilege escalation alert |
-| T1562.004 | Disable or Modify System Firewall | Impair Defenses | Windows Firewall was disabled via PowerShell to reduce detection and allow broader network access | Windows Security Event ID 4950 / 4719 (security policy change) — Wazuh system configuration alert |
-| T1053.005 | Scheduled Task | Scheduled Task/Job | A scheduled task was created to maintain persistent access to the compromised endpoint | Windows Security Event ID 4698 (scheduled task created) — Wazuh persistence detection alert |
-| T1222.002 | Linux and Mac File and Directory Permissions Modification | File and Directory Permissions Modification | Permissions on sensitive files were modified on the Linux endpoint to allow broader access | Wazuh File Integrity Monitoring (FIM) alert — detected attribute change on monitored file path |
+| T1110.001 | Password Guessing | Brute Force | Repeated failed login attempts against a single Windows account in a short timeframe, followed by a successful authentication | Windows Security Event (failed logon) repeated in sequence; followed by Event (successful logon) — surfaced as Wazuh authentication anomaly alert |
+| T1136.001 | Local Account | Create Account | A new user account was created on the Windows endpoint immediately following initial access | Windows Security Event (user account created) — flagged by Wazuh account management rule |
+| T1098 | — | Account Manipulation | Newly created account was added to the local Administrators group, granting elevated privileges | Windows Security Event (member added to security-enabled local group) — Wazuh privilege escalation alert |
+| T1562.004 | Disable or Modify System Firewall | Impair Defenses | Windows Firewall was disabled via PowerShell to reduce detection and allow broader network access | Windows Security Event (security policy change) — Wazuh system configuration alert |
+| T1053.005 | Scheduled Task | Scheduled Task/Job | A scheduled task was created to maintain persistent access to the compromised endpoint | Windows Security Event (scheduled task created) — Wazuh persistence detection alert |
+| T1222.002 | Linux and Mac File and Directory Permissions Modification | File and Directory Permissions Modification | Permissions on sensitive files were modified on the Linux endpoint to allow broader access using `chmod 777 ~/secret.txt` & `chmod 600 ~/secret.txt` | Wazuh File Integrity Monitoring (FIM) alert — detected attribute change on monitored file path |
 
 ---
 
